@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agency_Test_Result</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Agency_Test_Result</h2>
+                <p class='attribute'><strong>Start Time: </strong>2021-07-19 09:36:59</p>
+                <p class='attribute'><strong>Duration: </strong>47.34 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 5, Pass: 3, Error: 2</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.TestBITS</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_A_admin_Login</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_B_create_New_Document</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_C_create_new_agency</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_D_agency_registration</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">JavascriptException: Message: javascript error: Cannot read property 'shadowRoot' of null
+  (Session info: chrome=91.0.4472.124)
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "D:\Selenium\BITS_UNIT_AGENCY\main.py", line 51, in test_D_agency_registration
+    driver.execute_script(
+  File "D:\Selenium\BITS_UNIT_GROUP\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 634, in execute_script
+    return self.execute(command, {
+  File "D:\Selenium\BITS_UNIT_GROUP\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\Selenium\BITS_UNIT_GROUP\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.JavascriptException: Message: javascript error: Cannot read property 'shadowRoot' of null
+  (Session info: chrome=91.0.4472.124)
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_E_amendment</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">JavascriptException: Message: javascript error: Cannot read property 'shadowRoot' of null
+  (Session info: chrome=91.0.4472.124)
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "D:\Selenium\BITS_UNIT_AGENCY\main.py", line 208, in test_E_amendment
+    tpn = driver.execute_script('return document.querySelector("body > app-root > app-main-layout > nz-layout > nz-layout > nz-content > div > app-hatis-page > div > hatis-renderer").shadowRoot.querySelector("div.modal > div > div > hatis-renderer").shadowRoot.querySelector("div:nth-child(3) > form-renderer").shadowRoot.querySelector("div > div.main-content > div.container > wc-container > wc-container > wc-container:nth-child(1) > wc-text:nth-child(1)").shadowRoot.querySelector("div").innerText.split(".")[1].split(" ")[6]')
+  File "D:\Selenium\BITS_UNIT_GROUP\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 634, in execute_script
+    return self.execute(command, {
+  File "D:\Selenium\BITS_UNIT_GROUP\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\Selenium\BITS_UNIT_GROUP\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.JavascriptException: Message: javascript error: Cannot read property 'shadowRoot' of null
+  (Session info: chrome=91.0.4472.124)
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 5, Pass: 3, Error: 2 -- Duration: 47.34 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
